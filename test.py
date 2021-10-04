@@ -1,5 +1,3 @@
-
-# scraper.py
 import requests
 from bs4 import BeautifulSoup
 import json
@@ -10,11 +8,13 @@ URL = f'https://oatd.org/oatd/search?q={KEY_WORD}&form=basic'
 
 list = []
 
+
 def get_html(url):
     response = requests.get(url)
     if response.status_code != 200:
         return False
     return response.text
+
 
 def key_word_processing(key):
     file_name = "keyword.json"
@@ -27,6 +27,7 @@ def key_word_processing(key):
     else:
         new_list.append(key.replace(';', ''))
     save_to_file(new_list, file_name)
+
 
 def get_file_data(file_name):
     file = open('data/' + file_name, 'r')

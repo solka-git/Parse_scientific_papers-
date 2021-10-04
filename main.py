@@ -41,11 +41,6 @@ dict = {
 save_to_xlsx_pandas(dict)
 
 
-
-
-
-
-
 # file_name = "keyword.json"
 # new_list = get_file_data(file_name)
 #
