@@ -1,0 +1,8 @@
+Let's imagine that we want to gather scientific information about Quantum Cryptography.
+We want to know what other technologies and/or scientific approaches often use when someone talks about Quantum Cryptography.
+So what we need is to gather top-50 technologies that are mentioned together with Quantum Cryptography in scientific papers and on the internet.
+After that, you need to sort them according to their mention frequency (or make a counter so we can sort them by ourselves).
+Same for IoT security and Automated and Adaptive Networks.
+So in the end, we would like to see, for example,
+3 columns (Quantum Cryptography, IoT security, Automated and Adaptive Networks),
+where every contains 50 rows and every row is a technology often mentioned together with the given technology.
