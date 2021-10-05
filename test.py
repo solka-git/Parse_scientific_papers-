@@ -9,7 +9,6 @@ KEY_WORD_2 = 'IoT+security'
 KEY_WORD_3 = 'automated+and+adaptive+networks'
 URL = f'https://oatd.org/oatd/search?q={KEY_WORD}&form=basic'
 URL_2 = f'https://oatd.org/oatd/search?q={KEY_WORD_2}&form=basic'
-# URL_3 = f'https://oatd.org/oatd/search?q={KEY_WORD_3}&form=basic'
 URL_3 = f'https://oatd.org/oatd/search?q={KEY_WORD_3}&form=basic&start=31'
 
 
