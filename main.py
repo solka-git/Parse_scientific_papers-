@@ -26,22 +26,36 @@ def save_to_xlsx_pandas(list_):
 def list_count(list_):
     dict_ = {i: list_.count(i) for i in list_}
     sorted_dict = dict(sorted(dict_.items(), key=lambda kv: kv[1], reverse=True))
-    return sorted_dict
+    return list(sorted_dict)
 
 
-file_name = 'keyword.json'
-list_ = get_file_data(file_name)
 
-dict_list = list_count(list_)
-print(list(dict_list))
+file_name = 'quantum_crypt.json'
+list1_ = get_file_data(file_name)
+sort_list1 = list_count(list1_)
 
-dict = {
-    'Quantum cryptography': list_[:50]
+file_name = 'iot_security.json'
+list2_ = get_file_data(file_name)
+sort_list2 = list_count(list2_)
+
+file_name = 'auto_adapt_net.json'
+list3_ = get_file_data(file_name)
+sort_list3 = list_count(list3_)
+
+
+dict_ = {
+    'Quantum cryptography': sort_list1[:50],
+    'IoT security': sort_list2[:50],
+    'Automated and adaptive networks': sort_list3[:50]
 }
-save_to_xlsx_pandas(dict)
 
 
-# file_name = "keyword.json"
+save_to_xlsx_pandas(dict_)
+
+
+
+
+# file_name = "quantum_crypt.json"
 # new_list = get_file_data(file_name)
 #
 # if key[0:18] != 'Subjects/Keywords:':
